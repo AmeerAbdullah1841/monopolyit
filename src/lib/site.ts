@@ -3,11 +3,11 @@
  * navigation here — every component reads from this file.
  */
 export const site = {
-  name: "MonyPoly IT",
+  name: "MonoPoly IT",
   tagline: "Consulting & Staffing",
   description:
     "IT consulting and technical staffing for teams that need senior expertise, vetted talent, and delivery they can measure.",
-  url: "https://monypoly-it.example.com",
+  url: "https://monopolyit.com",
   email: "info@monopolyit.com",
   location: "Remote-first · US & EMEA",
 } as const;

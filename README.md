@@ -1,4 +1,4 @@
-# MonyPoly IT — Consulting & Staffing website
+# MonoPoly IT — Consulting & Staffing website
 
 Marketing site built with **Next.js 16 (App Router)**, **TypeScript**, **Tailwind CSS v4**, and **Motion** for animation.
 

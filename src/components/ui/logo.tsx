@@ -18,7 +18,7 @@ export function LogoMark({ className, priority = false }: { className?: string; 
   );
 }
 
-/** Wordmark colours sampled from the brand logo; "Mony" is lifted slightly for contrast on navy. */
+/** Wordmark colours sampled from the brand logo; "Mono" is lifted slightly for contrast on navy. */
 export function Logo({ className, priority = false }: { className?: string; priority?: boolean }) {
   return (
     <Link href="/#home" className={cn("group flex items-center gap-3", className)} aria-label={`${site.name} home`}>
@@ -28,7 +28,7 @@ export function Logo({ className, priority = false }: { className?: string; prio
       />
       <span className="leading-tight">
         <span className="block text-[1.05rem] font-bold tracking-tight">
-          <span className="text-[#5b7fdc]">Mony</span>
+          <span className="text-[#5b7fdc]">Mono</span>
           <span className="text-white">Poly</span> <span className="text-[#3bbcd8]">IT</span>
         </span>
         <span className="block text-[0.62rem] font-medium tracking-[0.22em] text-muted uppercase">
