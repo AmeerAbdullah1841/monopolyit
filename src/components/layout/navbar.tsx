@@ -49,7 +49,7 @@ export function Navbar() {
       )}
     >
       <nav aria-label="Primary" className="container-page flex h-[4.5rem] items-center justify-between gap-6">
-        <Logo />
+        <Logo priority />
 
         <ul className="hidden items-center gap-1 lg:flex">
           {navItems.map((item) => {

@@ -1,38 +1,37 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { site } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
-export function LogoMark({ className }: { className?: string }) {
+import logoMark from "../../../public/logo-mark.png";
+
+export function LogoMark({ className, priority = false }: { className?: string; priority?: boolean }) {
   return (
-    <span
-      className={cn(
-        "relative inline-flex size-11 items-center justify-center rounded-xl border border-cyan-400/30 bg-gradient-to-b from-ink-600/80 to-ink-800 shadow-[0_0_30px_-10px] shadow-cyan-400/60",
-        className,
-      )}
-    >
-      <svg viewBox="0 0 24 24" className="size-5" fill="none" aria-hidden>
-        <path
-          d="M4 18V7.5L12 13l8-5.5V18"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="text-cyan-400"
-        />
-        <circle cx="12" cy="5" r="1.6" className="fill-gold-400" />
-      </svg>
-    </span>
+    <Image
+      src={logoMark}
+      alt=""
+      priority={priority}
+      sizes="56px"
+      className={cn("h-11 w-auto drop-shadow-[0_0_14px_rgb(95_208_234/0.35)]", className)}
+    />
   );
 }
 
-export function Logo({ className }: { className?: string }) {
+/** Wordmark colours sampled from the brand logo; "Mony" is lifted slightly for contrast on navy. */
+export function Logo({ className, priority = false }: { className?: string; priority?: boolean }) {
   return (
     <Link href="/#home" className={cn("group flex items-center gap-3", className)} aria-label={`${site.name} home`}>
-      <LogoMark className="transition-transform duration-500 group-hover:rotate-[-6deg] group-hover:scale-105" />
+      <LogoMark
+        priority={priority}
+        className="transition-transform duration-500 group-hover:scale-105 group-hover:rotate-[-4deg]"
+      />
       <span className="leading-tight">
-        <span className="block text-[0.95rem] font-semibold text-white">{site.name}</span>
-        <span className="block text-[0.65rem] font-medium tracking-[0.25em] text-muted uppercase">
+        <span className="block text-[1.05rem] font-bold tracking-tight">
+          <span className="text-[#5b7fdc]">Mony</span>
+          <span className="text-white">Poly</span> <span className="text-[#3bbcd8]">IT</span>
+        </span>
+        <span className="block text-[0.62rem] font-medium tracking-[0.22em] text-muted uppercase">
           {site.tagline}
         </span>
       </span>

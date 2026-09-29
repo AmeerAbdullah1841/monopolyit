@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone, type LucideIcon } from "lucide-react";
+import { Mail, MapPin, type LucideIcon } from "lucide-react";
 
 import { Reveal, Stagger, StaggerItem } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -8,7 +8,6 @@ import { ContactForm } from "./contact-form";
 
 const channels: { icon: LucideIcon; label: string; value: string; href?: string }[] = [
   { icon: Mail, label: "Email", value: site.email, href: `mailto:${site.email}` },
-  { icon: Phone, label: "Phone", value: site.phone, href: `tel:${site.phone.replace(/[^+\d]/g, "")}` },
   { icon: MapPin, label: "Coverage", value: site.location },
 ];
 

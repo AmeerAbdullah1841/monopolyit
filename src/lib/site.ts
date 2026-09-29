@@ -8,8 +8,7 @@ export const site = {
   description:
     "IT consulting and technical staffing for teams that need senior expertise, vetted talent, and delivery they can measure.",
   url: "https://monypoly-it.example.com",
-  email: "hello@monypolyit.com",
-  phone: "+1 (555) 014-2099",
+  email: "info@monopolyit.com",
   location: "Remote-first · US & EMEA",
 } as const;
 
