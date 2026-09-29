@@ -73,9 +73,14 @@ export function Footer() {
         <p>
           © {new Date().getFullYear()} {site.name}. All rights reserved.
         </p>
-        <a href={`mailto:${site.email}`} className="text-cyan-400 transition-colors hover:text-cyan-300">
-          {site.email}
-        </a>
+        <div className="flex flex-col gap-1 sm:items-end">
+          <a href={`mailto:${site.email}`} className="text-cyan-400 transition-colors hover:text-cyan-300">
+            {site.email}
+          </a>
+          <a href={`tel:${site.phone.replace(/[^+\d]/g, "")}`} className="transition-colors hover:text-fg">
+            {site.phone}
+          </a>
+        </div>
       </div>
     </footer>
   );

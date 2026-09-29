@@ -9,6 +9,7 @@ export const site = {
     "IT consulting and technical staffing for teams that need senior expertise, vetted talent, and delivery they can measure.",
   url: "https://monopolyit.com",
   email: "info@monopolyit.com",
+  phone: "+1 (631) 671-2656",
   location: "Remote-first · US & EMEA",
 } as const;
 
